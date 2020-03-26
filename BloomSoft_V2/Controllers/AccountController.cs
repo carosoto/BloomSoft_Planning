@@ -80,11 +80,11 @@ namespace BloomSoft_V2.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    return RedirectToAction("Menu", "Home", null); // new code
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = false });
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Intento de inicio de sesión no válido.");
@@ -125,7 +125,7 @@ namespace BloomSoft_V2.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToAction("User_menu", "Home", null);
+                    return RedirectToAction("Index", "Home", null);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.Failure:
