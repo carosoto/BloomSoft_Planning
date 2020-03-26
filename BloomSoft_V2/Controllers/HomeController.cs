@@ -26,5 +26,12 @@ namespace BloomSoft_V2.Controllers
 
             return View();
         }
+        [Authorize]
+        public ActionResult User_menu()
+        {
+            ViewBag.Message = "Your menu page.";
+
+            return View();
+        }
     }
 }
