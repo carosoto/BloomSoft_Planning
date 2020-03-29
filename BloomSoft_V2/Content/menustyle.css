@@ -1,5 +1,5 @@
 ﻿body {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .glyphicon {
@@ -17,3 +17,7 @@
     .panel-body .table {
         margin-bottom: 0px;
     }
+
+.well{
+    background-color:white;
+}
