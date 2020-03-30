@@ -19,7 +19,7 @@ namespace BloomSoft_V2.Controllers
 
             return View();
         }
-
+       
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
