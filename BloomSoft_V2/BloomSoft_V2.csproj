@@ -185,20 +185,20 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Datos\BSModel.Context.cs">
+    <Compile Include="Datos\BSPModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BSModel.Context.tt</DependentUpon>
+      <DependentUpon>BSPModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Datos\BSModel.cs">
+    <Compile Include="Datos\BSPModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BSModel.tt</DependentUpon>
+      <DependentUpon>BSPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Datos\BSModel.Designer.cs">
+    <Compile Include="Datos\BSPModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BSModel.edmx</DependentUpon>
+      <DependentUpon>BSPModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -215,15 +215,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\menustyle.css" />
-    <Content Include="Datos\BSModel.Context.tt">
+    <Content Include="Datos\BSPModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BSModel.edmx</DependentUpon>
-      <LastGenOutput>BSModel.Context.cs</LastGenOutput>
+      <DependentUpon>BSPModel.edmx</DependentUpon>
+      <LastGenOutput>BSPModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Datos\BSModel.tt">
+    <Content Include="Datos\BSPModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BSModel.edmx</DependentUpon>
-      <LastGenOutput>BSModel.cs</LastGenOutput>
+      <DependentUpon>BSPModel.edmx</DependentUpon>
+      <LastGenOutput>BSPModel.cs</LastGenOutput>
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -231,12 +231,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Datos\BSModel.edmx">
+    <EntityDeploy Include="Datos\BSPModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BSModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>BSPModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Datos\BSModel.edmx.diagram">
-      <DependentUpon>BSModel.edmx</DependentUpon>
+    <Content Include="Datos\BSPModel.edmx.diagram">
+      <DependentUpon>BSPModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

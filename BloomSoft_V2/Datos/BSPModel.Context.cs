@@ -13,10 +13,10 @@ namespace BloomSoft_V2.Datos
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BloomSoftPlanningEntities : DbContext
+    public partial class BSPEntities : DbContext
     {
-        public BloomSoftPlanningEntities()
-            : base("name=BloomSoftPlanningEntities")
+        public BSPEntities()
+            : base("name=BSPEntities")
         {
         }
     
