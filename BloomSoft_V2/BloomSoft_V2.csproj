@@ -185,21 +185,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Datos\BSPModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BSPModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Datos\BSPModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BSPModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Datos\BSPModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BSPModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,34 +195,21 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-BloomSoft_V2-20200310111219.mdf" />
+    <Content Include="App_Data\aspnet-BloomSoft_V2-20200310111219_log.ldf">
+      <DependentUpon>aspnet-BloomSoft_V2-20200310111219.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\menustyle.css" />
-    <Content Include="Datos\BSPModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BSPModel.edmx</DependentUpon>
-      <LastGenOutput>BSPModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Datos\BSPModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BSPModel.edmx</DependentUpon>
-      <LastGenOutput>BSPModel.cs</LastGenOutput>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Datos\BSPModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BSPModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Datos\BSPModel.edmx.diagram">
-      <DependentUpon>BSPModel.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -288,7 +260,6 @@
     <Content Include="Views\Home\GameBoard.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Imagenes\" />
   </ItemGroup>
   <ItemGroup>
